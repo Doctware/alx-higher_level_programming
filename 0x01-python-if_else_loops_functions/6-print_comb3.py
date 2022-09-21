@@ -4,7 +4,7 @@ for i in range(0, 9):
         if i == j:
             continue
         if i == 8 and j == 9:
-            print("{}".format(str(i)+ str(j)))
+            print("{}".format(str(i) + str(j)))
         elif int(str(i) + str(j)) < int(str(j) + str(i)):
             print("{}, ".format(str(i) + str(j)), end="")
         else:
