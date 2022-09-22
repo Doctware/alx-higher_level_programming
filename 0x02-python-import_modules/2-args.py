@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Prints the number of and the list of its argument
+# Prints the number of and the list of its argument.
 if __name__ == "__main__":
         import sys
 
