@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 for num in range(100):
-    print("{:d}".format(mun), end=', ')
-print()
+    if num < 99:
+        print("{:d}, ".format(num), end='')
+    else:
+        print("{:d}".format(num))
