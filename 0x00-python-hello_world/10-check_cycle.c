@@ -3,7 +3,7 @@
 
 /**
  * check_cycle - checkes if a singly liked list have a cycle
- * @list: [ointer to the head of th e linked list
+ * @list: pointer to the head of th e linked list
  * Return: 1 if ture,  else 0
  */
 
