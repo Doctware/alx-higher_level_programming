@@ -11,7 +11,7 @@ if __name__ == "__main__":
     mul_res = mul(a, b)
     div_res = div(a, b)
 
-    print(f"{a} + {b} = {add_res}")
-    print(f"{a} - {b} = {sub_res}")
-    print(f"{a} * {b} = {mul_res}")
-    print(f"{a} / {b} = {div_res}")
+    print("{} + {} = {}".format(a, b, add_res))
+    print("{} - {} = {}".format(a, b, sub_res))
+    print("{} * {} = {}".format(a, b, mul_res))
+    print("{} + {} = {}".format(a, b, div_res))
