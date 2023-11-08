@@ -8,4 +8,4 @@ def common_elements(set_1, set_2):
             if look_1 == look_2:
                 result = look_1
 
-    return result
+        return result
