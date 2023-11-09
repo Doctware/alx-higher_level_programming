@@ -2,7 +2,7 @@
 def simple_delete(a_dictionary, key=""):
 
     """ Delete a key from the dictionary """
-    
+
     if key in a_dictionary:
         del a_dictionary[key]
 
