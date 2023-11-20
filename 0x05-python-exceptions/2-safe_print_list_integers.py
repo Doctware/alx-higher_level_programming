@@ -1,17 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    
-    """ print the first x element of a list and all integers """
-
-    for i in range(x):
+    try:
         count = 0
 
-        try:
-            print("{:d}".format(my_list[i]), end="")
-            count += i
+        for i in range(x):
+            if isinstance(my_list[i], int):
+                print("{:d}".format(my_list[i]), end="")
+                count = count + 1
+        print()
+        return count
 
-        except (ValueError, TypeError):
-            pass
-
-    print()
-    return count
+    except (TypeError, ValueError):
+        print()
+        return count
