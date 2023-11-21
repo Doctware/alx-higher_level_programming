@@ -4,6 +4,8 @@
 """
 class Square:
 
-    """ Pass 
+    """
+    Pass indicating an empty string
+
     """
     pass
