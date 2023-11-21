@@ -1,11 +1,6 @@
 #!/usr/bin/python3
+""" This module define an empty class called squre"""
 
-""" Creating an empty class 
-"""
 class Square:
-
-    """
-    Pass indicating an empty class
-
-    """
+    """ An empty class, pass indicating empty block """
     pass
