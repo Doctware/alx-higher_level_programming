@@ -34,7 +34,7 @@ class Square:
     the current ssquare area
     """
 
-    def area(sellf):
+    def area(self):
 
         """
         computing area of square
