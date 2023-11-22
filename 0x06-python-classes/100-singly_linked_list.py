@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Class thats defined a node in a
+    singly link list """
+
 
 class Node:
     """Node class defines a node of a singly linked list."""
