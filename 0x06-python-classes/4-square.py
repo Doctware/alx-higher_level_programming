@@ -19,7 +19,6 @@ class Square:
         Also check if size is >= 0 else raise ValueError
 
         Then fianlly pass
-        
         """
 
         self.size = size
@@ -65,7 +64,7 @@ class Square:
     def area(self):
 
         """
-        calculate the area of current square 
+        calculate the area of current square
 
         return the area of square
         """
