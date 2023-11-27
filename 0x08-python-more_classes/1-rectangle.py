@@ -7,7 +7,7 @@ class Rectangle:
     """ define init method """
 
     def __init__(self, width=0, height=0):
-        """ 
+        """
         Inisialized the parameter of the of init method
 
         parameter:
@@ -56,7 +56,7 @@ class Rectangle:
     @property
     def height(self):
         """
-        getting private instance attribute 
+        getting private instance attribute
 
         Returning it
         """
