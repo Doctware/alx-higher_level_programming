@@ -99,8 +99,8 @@ class Rectangle:
 
         Retrning it
         """
-        return 2 * (self.__width + self.__height) \
-            if self.__width == 0 or self.__height == 0 else 0
+        return 0 if self.__width == 0 or self.__height == 0 \
+            else 2 * (self.__width + self.__height)
 
     """ define __str__ method that print rectangle with character "#" """
 
