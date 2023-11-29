@@ -115,8 +115,8 @@ class Rectangle:
             return ""
 
         result = ""
-        for _ in range(self.__width):
-            result += "#" * self.__height + '\n'
+        for _ in range(self.__height):
+            result += "#" * self.__width + '\n'
         return result.rstrip()
 
     """ definr __repr__ method thats returns the pycode of str """
