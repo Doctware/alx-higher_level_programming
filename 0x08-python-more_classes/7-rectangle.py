@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ A class Rectangle thats define rectangle by
     (base on 6-rectangle.py) """
 
 
 class Rectangle:
-    """Defines a rectangle."""
+    """ inisialize clas variable """
 
     number_of_instances = 0
     print_symbol = "#"
