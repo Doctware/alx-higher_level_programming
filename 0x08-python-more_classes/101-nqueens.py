@@ -39,9 +39,9 @@ def solve_nqueens(N):
 
 
 def print_board(board, N):
-    solution = [[row, col] for row in range(N) \
-        for col in range(N) if board[row][col] == 1]
+    solution = [[row, col] for row in range(N) for col in range(N) if board[row][col] == 1]
     print(solution)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
