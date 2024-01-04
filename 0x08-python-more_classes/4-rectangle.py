@@ -142,4 +142,4 @@ class Rectangle:
 
         """
 
-        return f"Rectanngle({self.__width}, {self.__height})"
+        return f"Rectanngle({self.width}, {self.height})"
