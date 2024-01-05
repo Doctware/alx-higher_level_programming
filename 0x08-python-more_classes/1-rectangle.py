@@ -1,0 +1,79 @@
+#!/usr/bin/python3
+""" A class Rectangle that defines a retangle
+    based on 0-rectangle """
+
+
+class Rectangle:
+    """ def init method """
+
+    def __init__(self, width=0, height=0):
+
+        """
+        Inisializing an instance variable
+
+        parameter:
+
+        width: the width of the rectangle
+        height: the height of the rectangle
+        """
+
+        self.width = width
+        self.height = height
+
+    """ def private instance attribute width """
+    @property
+    def width(self):
+        """
+        getting the value of width
+
+        returning it
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """
+        set the value for width
+
+        Check if:
+
+        width is an integer, if False raise TypeError
+        width is < 0, if True raise ValueError
+        """
+        try:
+            self.__width = value
+            if not isinstance(value, int):
+                raise TypeError("width must be an integer")
+            elif value < 0:
+                raise ValueError("width must be >= 0")
+        finally:
+            pass
+
+        """ def private instance attribute height """
+        @property
+        def height(self):
+            """
+            getting the value og height
+
+            returning it
+            """
+            return self.__height
+
+        @height.setter
+        def height(self, value):
+            """
+            set the value of hheight
+
+            Check if:
+
+            height is an integer, if False raise TypeError
+            height is < 0, if True raise ValueError
+            """
+            try:
+                self.__height = value
+                if not isinstance(value, int):
+                    raise TypeError("height must be an integer")
+                elif value < 0:
+                    raise ValueError("height must be >= 0")
+            finally:
+                pass
