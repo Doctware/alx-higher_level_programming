@@ -21,7 +21,7 @@ class Rectangle:
         (public class attribute number_of_instances
         increment during new instance instatation)
 
-        (public class attribute print_symbol 
+        (public class attribute print_symbol
         Used as symbol for string representation)
         """
         self.width = width
@@ -98,7 +98,7 @@ class Rectangle:
         """
         Rerturning the area of rectangle
         """
-        return self.__width * self.__height
+        return self.width * self.height
 
     """ public instance method that return the rectangle perimeter """
     def perimeter(self):
@@ -125,8 +125,10 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         else:
-            return "\n".join([str(Rectangle.print_symbol) * self.width\
-                    for _ in range(self.height)])
+            rec_str = ""
+            for _ in range(self.height):
+                rec_str += str(Rectangle.print_symbol) * self.width + "\n"
+            return rec_str.rstrip()
 
     """ def __repr__ method that return string representation of
         the rctangle to be able to recreate new instance by using eval() """
@@ -137,7 +139,7 @@ class Rectangle:
 
         """
 
-        return f"Rectangle({self.wigth}, {self.height})"
+        return f"Rectangle({self.width}, {self.height})"
 
     """ defining a method __del__ that print message
         when an instance is deleted """
