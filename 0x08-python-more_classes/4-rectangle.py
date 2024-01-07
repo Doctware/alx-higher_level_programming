@@ -105,9 +105,9 @@ class Rectangle:
         if wiidth or height = 0
         return empty string
         """
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return ""
-        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+        return "\n".join(["#" * self.width for _ in range(self.height)])
 
     """ def __repr__ to return a string reprecentation of the rectangle to be
         able to recreate a new insatnce by using eval() """
@@ -116,4 +116,4 @@ class Rectangle:
         """
         return reprecentation of rectangle
         """
-        return f"Rectangle({self.width}, {self.__height})"
+        return f"Rectangle({self.width}, {self.height})"
