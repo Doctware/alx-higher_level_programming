@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" A class rectangle (base on 3-main.py)"""
+
+
 class Rectangle:
     """
     Defines a rectangle with width and height.
