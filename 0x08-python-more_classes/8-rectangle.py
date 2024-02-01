@@ -17,12 +17,11 @@ class Rectangle:
         width and height
 
         public class attribute number_of_instances
-        will be incresing during each new instance 
+        will be incresing during each new instance
         """
         self.width = width
         self.height height
         Rectangle.number_of_instances += 1
-
 
     @property
     def width(self):
@@ -32,7 +31,7 @@ class Rectangle:
         Returnig it
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """
@@ -45,9 +44,7 @@ class Rectangle:
         try:
             if not isinstance(value, int):
                 raise TypeError("width must be am ineget")
-            elif value  < 0:
+            elif value < 0:
                 raise ValueError("width must >= 0")
             else:
                 self.__width = value
-
-
