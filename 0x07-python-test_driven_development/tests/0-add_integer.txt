@@ -5,6 +5,9 @@ Testing port for 0-add_integer.py
 
 Now use it:
 
+testing outputs
+===============
+
   >>> add_integer(1, 2)
   3
   >>> add_integer(100, -2)
@@ -13,3 +16,13 @@ Now use it:
   100
   >>> add_integer(100.3, -2)
   98
+
+testing exceptions
+==================
+  >>> add_integer(4, "School")
+  Traceback (most resent call last):
+  TypeError: b must be an integer
+
+  >>> add_integer(None)
+  Traceback (most recent call last):
+  TypeError: a must be an integer
