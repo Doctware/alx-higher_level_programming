@@ -1,3 +1,0 @@
-python
-
-OOP iheritance
