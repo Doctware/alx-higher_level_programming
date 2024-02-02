@@ -16,3 +16,22 @@ testing intended output
 
   >>> say_my_name("clever")
   clever
+
+Testing my doc
+==============
+
+::
+  >>> m = say_my_name = __import__('3-say_my_name').__doc__
+  >>> len(m) > 1
+  True
+
+  >>> f = say_my_name = __import__('3-say_my_name').say_my_name.__doc__
+  >>> len(f) > 1
+  True
+
+Testing Error cases
+==================
+::
+  >>> say_my_name(12, "school")
+  Traceback (most recent call lst):
+  TypeError: first_name must be a string 
