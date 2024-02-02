@@ -1,0 +1,18 @@
+Test port  for 3-say_my_name.py
+===============================
+
+::
+  >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it:
+
+testing intended output
+=======================
+  >>> say_my_name("John", "Smith" )
+  John Smith
+
+  >>> say_my_name("Walter", "White")
+  Walter White
+
+  >>> say_my_name("clever")
+  clever
