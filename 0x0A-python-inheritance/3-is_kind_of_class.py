@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This function chekc if object is a kind 
+""" This function chekc if object is a kind
     kind of the specified class """
 
 
