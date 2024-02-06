@@ -20,7 +20,7 @@ class BaseGeometry:
         check if value is <= 0 raise ValueError
         with the given exception message
         """
-        if is type(value) != int:
+        if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
 
         if value <= 0:
