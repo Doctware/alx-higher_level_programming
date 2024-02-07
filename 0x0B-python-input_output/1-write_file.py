@@ -3,7 +3,7 @@
     and returns the number of character written """
 
 
-def write_file(file_name="", text=""):
+def write_file(filename="", text=""):
     """
     write a string to a text file
     """
