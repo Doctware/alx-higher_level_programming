@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this function return list og integers reprecentig 
+""" this function return list og integers reprecentig
     the pascal's triangle """
 
 
