@@ -1,24 +1,16 @@
 #!/usr/bin/python3
-""" importing from sys and from function from modules"""
+''' Module that adds args to JSON file | importing modules '''
+
 import sys
-from save_to_json_file import save_to_json_file
-from load_from_json_file import load_from_json_file
+import os
 
+arg_list = sys.argv[1:]
 
-def main():
-    """
-    Add command-line arguments to a Python list and save them to a file.
+save_JSON = __import__('5-save_to_json_file').save_to_json_file
+load_JSON = __import__('6-load_from_json_file').load_from_json_file
 
-    Usage:
-        python script_name.py arg1 arg2 ...
+lisst = []
+if os.path.exists('add_item.json'):
+    lisst = load_JSON('add_item.json')
 
-    Arguments:
-        arg1, arg2, ...: Command-line arguments to be added to the list.
-
-    """
-    items = load_from_json_file("add_item.json") if sys.argv[1:] else []
-
-    for arg in sys.argv[1:]:
-        items.append(arg)
-
-    save_to_json_file(items, "add_item.json")
+save_JSON(lisst + arg_list, "add_item.json")
