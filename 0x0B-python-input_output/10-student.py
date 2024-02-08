@@ -4,7 +4,8 @@
 
 class Student:
     """
-    Represents a student with attributes first_name, last_name, and age.
+    Represents a student with attributes first_name,
+    last_name, and age.
 
     Attributes:
         first_name (str): The first name of the student.
@@ -14,7 +15,8 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """
-        Initializes a Student object with the provided first name, last name, and age.
+        Initializes a Student object with the provided first name,
+        last name, and age.
 
         Parameters:
             first_name (str): The first name of the student.
@@ -30,8 +32,10 @@ class Student:
         Retrieves a dictionary representation of a Student instance.
 
         Parameters:
-            attrs (list of str, optional): A list of attribute names to retrieve.
-                If provided, only attributes with names in this list will be included in the dictionary.
+            attrs (list of str, optional): A list of attribute
+            names to retrieve.
+                If provided, only attributes with names in this list
+                will be included in the dictionary.
                 If not provided or None, all attributes will be retrieved.
 
         Returns:
