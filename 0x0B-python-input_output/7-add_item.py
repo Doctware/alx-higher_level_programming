@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Module that adds args to JSON file | importing modules '''
+""" Module that adds args to JSON file | importing modules """
 
 import sys
 import os
