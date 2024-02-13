@@ -17,7 +17,7 @@ def add_items_to_list(filename, *args):
     items = load_from_json_file(filename)
     items.extend(args)
 
-    save_to_json_file(args, filename)
+    save_to_json_file(items, filename)
 
 
 arguments = sys.argv[1:]
