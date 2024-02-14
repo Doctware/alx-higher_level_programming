@@ -1,6 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/python3i
+"""
+This module contans a class Rectangle thats inherits from Base class
+"""
 from models.base import Base
-""" This module contans a class Rectangle thats inherits from Base class """
 
 
 class Rectangle(Base):
