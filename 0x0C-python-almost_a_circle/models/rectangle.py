@@ -82,11 +82,10 @@ class Rectangle(Base):
         """
         print to stout the insatnce of Rectangle
         """
+        for _ in range(self.y):
+            print()
         for _ in range(self.height):
-            print("#" * self.width)
-
-        for _ in range(self.x):
-            print("#" * self.y)
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """
