@@ -123,5 +123,11 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returning the dictonary representation of rectangle """
-        return dict(self.x, self.y, self.height, self.width)
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
 
