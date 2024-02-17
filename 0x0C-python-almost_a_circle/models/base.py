@@ -25,7 +25,7 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def safe_to_file(cls, list_objs):
         """
