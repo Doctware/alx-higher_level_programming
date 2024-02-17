@@ -60,7 +60,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ Retu """
+        
         filename = "{}.json".fromat(cls.__name__)
 
         if filename is None:
