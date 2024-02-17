@@ -36,7 +36,7 @@ class Base:
             list_ibjs = []
 
         cls_name = cls.__name__
-        filename = "{}.json".format(cls.name)
+        filename = "{}.json".format(cls_name)
 
         with open(filename, 'w') as f:
             json_data =\
