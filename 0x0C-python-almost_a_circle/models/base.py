@@ -60,8 +60,11 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        
-        filename = "{}.json".fromat(cls.__name__)
+        """
+        Update the class Base by adding the class method
+        def load_from_file(cls): that returns a list of instances:
+        """
+       filename = "{}.json".fromat(cls.__name__)
 
         if filename is None:
             return []
