@@ -33,7 +33,7 @@ class Base:
         the json string representation of list_objs to file
         """
         if list_objs is None:
-            list_ibjs = []
+            list_objs = []
 
         cls_name = cls.__name__
         filename = "{}.json".format(cls_name)
