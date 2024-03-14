@@ -1,3 +1,3 @@
 -- lists all the table in the give database
-USE ;
+USE;
 SHOW TABLES;
