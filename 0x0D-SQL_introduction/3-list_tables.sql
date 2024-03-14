@@ -1,3 +1,3 @@
 -- lists all the table in the give database
-USE mysql;
+USE $1;
 SHOW TABLES;
