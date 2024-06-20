@@ -6,5 +6,5 @@ const number = Math.floor(Number(fArg));
 if (isNaN(number)) {
   console.log('Not a number');
 } else {
-  console.log(`my number: ${number}`);
+  console.log(`My number: ${number}`);
 }
