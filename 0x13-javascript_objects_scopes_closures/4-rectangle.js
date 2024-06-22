@@ -12,7 +12,7 @@ class Rectangle {
 
   print () {
     if (this.width !== undefined && this.height !== undefined) {
-      for (let ch = 0; ch <= this.height; ch++) {
+      for (let ch = 0; ch < this.height; ch++) {
         console.log('x'.repeat(this.width));
       }
     }
@@ -20,7 +20,7 @@ class Rectangle {
 
   rotate () {
     if (this.width !== undefined && this.height !== undefined) {
-      [this.width, this.height] = [this.height, this.width];
+      [this.height, this.width] = [this.width, this.height];
     }
   }
 
