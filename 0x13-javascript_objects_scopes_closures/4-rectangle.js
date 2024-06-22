@@ -8,24 +8,18 @@ class Rectangle {
   }
 
   print () {
-    if (this.width !== undefined && this.height !== undefined) {
-      for (let ch = 0; ch < this.height; ch++) {
-        console.log('x'.repeat(this.width));
-      }
+    for (let ch = 0; ch < this.height; ch++) {
+      console.log('x'.repeat(this.width));
     }
   }
 
   rotate () {
-    if (this.width !== undefined && this.height !== undefined) {
-      [this.height, this.width] = [this.width, this.height];
-    }
+    [this.height, this.width] = [this.width, this.height];
   }
 
   double () {
-    if (this.width !== undefined && this.height !== undefined) {
-      this.width *= 2;
-      this.height *= 2;
-    }
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 
