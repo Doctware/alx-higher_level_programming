@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this module filtering state """
+""" this module filtering name by state state """
 import MySQLdb
 import sys
 
@@ -7,7 +7,8 @@ import sys
 def my_filter_state(username, password, database, state_n):
     """
         this function display the arsument passed
-        to a script """
+        to a script
+    """
 
     # connecting to mySQL
     db = MySQLdb.connect(
