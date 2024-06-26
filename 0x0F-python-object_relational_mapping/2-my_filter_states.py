@@ -23,8 +23,8 @@ def my_filter_state(username, password, database, state_n):
     cur = db.cursor()
 
     # Executing sql quary
-    quary = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-    cur.execute(quary, (state_n,))
+    quary = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(state_n)
+    cur.execute(quary)
 
     # geting the row
     rows = cur.fetchall()
