@@ -5,6 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     """ the class state thats inherit from Base """
     __tablename__ = "states"
