@@ -24,7 +24,7 @@ def filter_cities(username, password, database, state_n):
     SELECT cities.id, cities.name
     FROM cities
     JOIN states ON cities.state_id = states.id
-    WHERE states.name = %s
+    WHERE states.name LIKE BINARY %s
     ORDER BY cities.id ASC;
     """
     cur.execute(query, (state_n,))
@@ -33,8 +33,9 @@ def filter_cities(username, password, database, state_n):
     rows = cur.fetchall()
 
     # printing result
-    for row in rows:
-        print(row)
+    city = ", ".join(row[1] for row in rows)
+
+    print(city)
 
     # closing proccess
     cur.close()
