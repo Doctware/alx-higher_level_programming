@@ -21,7 +21,7 @@ if __name__ == "__main__":
     session = Session()
 
     # querying all state obj
-    states = session.query(State).filter(State.name.like('%a%')).all()
+    states = session.query(State).filter(State.name.contains('a')).all()
 
     # deleting
     for state in states:
