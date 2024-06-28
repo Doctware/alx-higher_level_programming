@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3i
 """ this module contains instruction thats print the given states obj
     from the given DB """
 import sys
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     # printing resulr
     if state:
-        print(f"{state.id}: {state.name}")
+        print(f"{state.id}")
     else:
         print("Not found")
 
