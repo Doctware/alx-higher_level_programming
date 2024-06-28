@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 """ this module contains instruction thats print the given states obj
     from the given DB """
 import sys
