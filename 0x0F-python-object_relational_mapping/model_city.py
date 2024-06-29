@@ -5,6 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from model_state import Base, State
 
+
 class City(Base):
     """ The class City that inherits from Base, imported from model_state.
 
@@ -12,7 +13,7 @@ class City(Base):
         id: Not null, integer, auto-generate
         name: String of max length 128, not null
         state_id: Foreign key referencing states.id, not null
-i    """
+    """
 
     __tablename__ = 'cities'
 
