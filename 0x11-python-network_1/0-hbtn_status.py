@@ -7,6 +7,6 @@ with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
 
 if __name__ == "__main__":
     print("Body response:")
-    print(f'\t- type:" {type(result)}')
+    print(f'\t- type: {type(result)}')
     print(f'\t- content: {result}')
     print(f'\t- utf-8 content: {result.decode("utf-8")}')
