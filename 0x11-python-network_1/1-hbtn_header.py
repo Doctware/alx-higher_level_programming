@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ this python script takes in a url send a rquest to the url
-    then dispaly the value of the X-Request-id foound on it """
+    then dispaly the value of the X-Request-id found in the header of response
+    """
 import urllib.request
 import sys
 
