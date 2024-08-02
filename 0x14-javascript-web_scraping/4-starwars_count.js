@@ -12,7 +12,7 @@ rq.get(apiUrl, function (err, resp, bdy) {
     const films = JSON.parse(bdy).results;
     let count = 0;
 
-    for (let i = 0; i < films.lenght; i++) {
+    for (let i = 0; i < films.length; i++) {
       const film = films[i];
       if (film.characters.includes(chrUrl)) {
         count++;
