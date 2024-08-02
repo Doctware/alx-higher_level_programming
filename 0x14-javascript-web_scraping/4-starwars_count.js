@@ -15,7 +15,7 @@ rq.get(apiUrl, function (err, resp, bdy) {
     for (let i = 0; i < films.length; i++) {
       const film = films[i];
       if (film.characters.includes(chrUrl)) {
-        count++;
+        count = count + 1;
       }
     }
     console.log(count);
